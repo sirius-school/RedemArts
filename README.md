@@ -296,15 +296,43 @@ Les propriétés CSS vont servir à changer nos éléments sélectionnées et à
 #### Quelques propriétés
 
 - `font-family:`: définit la police utilisée.
-- `color:`: définit la couleur du texte des éléments.
-- `text-align:`: aligne le texte à l'intérieur des éléments.
-- `padding:`: marges internes des éléments.
-- `margin:`: marge autour des éléments.
-- `width:`: définit la largeur des éléments.
-- `height:`: définit la hauteur des éléments.
+- `color:`: définit la couleur du texte des éléments. Sa valeur peut-être en hexadécimal ou simplement le nom d'une couleur en anglais.
+- `text-align:`: aligne le texte à l'intérieur des éléments, sa valeur est un élément défini par le langage, faites votre choix parmi la liste.
+- `padding:`: marges internes des éléments, sa valeur est quasiment toujours en pixels (px).
+- `margin:`: marge autour des éléments, sa valeur est quasiment toujours en pixels (px).
+- `width:`: définit la largeur des éléments, sa valeur peut être sous plusieurs formats (%, px, vw).
+- `height:`: définit la hauteur des éléments, sa valeur peut-être sous plusieurs formats (%, px, vh)
+- `background:`: définit l'arrière plan.
+- `background-color:`: définit la couleur de l'arrière plan.
 
+**Ton code (exercice)**
 
+1. Dans les étapes précédentes tu as créé ton HTML mais pour l'instant aucune mise en page, aucun style n'est encore appliqué. Tu vas devoir créer un fichier nommé ``style.css`` à la racine de ton dossier.
+2. Il faut maintenant lier tes deux fichiers, place toi à l'intérieur de la balise `head` juste au dessous de `title` et commence à taper `link`, dans la liste déroulante devrait apparaitre `link:css` choisis cette option et valide avec `Enter` ou `Tab`
+3. Pour vérifier que ta liaison est bien faite, rentre dans ton fichier CSS et colle ce bout de code :
+```css
+body {
+   background-color: red;
+}
+```
+Si t'as les yeux qui piquent c'est que c'est bon.
 
+4. Je te donne un bout de code qui servira à centrer tous les élèments sur ta page mais nous ne prendrons pas le temps de parcourir en détail :
+```css
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+```
+5. Pour la balise `h1`, ajoute lui une `font-family` de ton choix et une `color`
+6. Pour ta liste `ol`, ajoute lui une propriété `text-align` pour que le texte soit collé à gauche
+7. Les id HTML, CSS, JS et WP ne sont pas assez espacées, utilises la propriété `margin-top` pour séparer les éléments.
+8. Les images sont toutes trop grandes, utilises la propriété `width` ou `max-width` pour les réduire.
+9. Et pour finir, laisse place à ton imagination et n'hésites pas à chercher d'autres propriétés qui pourrait te permettre de faire de beaux visuels.
+
+Merci à tous d'avoir suivi cet atelier et demain c'est WordPress avec Jeremy !
 
 [Le cours complet Sirius WebDev](https://github.com/sirius-school/WebDev)
 
