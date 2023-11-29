@@ -14,6 +14,11 @@
     - [Les liens `<a>` et l'attribut ID](#les-liens-a-et-lattribut-id)
   - [La balise `<div>`](#la-balise-div)
 - [CSS](#css)
+  - [Liaison HTML et CSS](#liaison-html-et-css)
+  - [La syntaxe](#la-syntaxe)
+  - [Les sélecteurs](#les-sélecteurs)
+  - [Les propriétés](#les-propriétés)
+    - [Quelques propriétés](#quelques-propriétés)
 
 ## Introduction
 
@@ -22,7 +27,7 @@ Bienvenue à l'atelier Web en Redém'Arts ! Dans ce cours, nous explorerons les 
 ## Installer votre éditeur de code
 
 1. **Téléchargement** :
-   Rendez-vous sur le site officiel de Visual Studio Code : [Visual Studio Code](https://code.visualstudio.com/Download). Téléchargez la version correspondant à votre système d'exploitation.
+   Rendez-vous sur le site officiel de [Visual Studio Code](https://code.visualstudio.com/Download). Téléchargez la version correspondant à votre système d'exploitation.
 
 2. **Lancement de l'installation** :
    Une fois le téléchargement terminé, ouvrez le fichier téléchargé (généralement nommé `VSCodeSetup.exe`) en double-cliquant dessus.
@@ -236,4 +241,71 @@ Logiquement vous devriez tous avoir ce code :
 ```
 
 ## CSS
+
+Le CSS, abréviation de Cascading Style Sheets, est utilisé pour définir l'apparence visuelle des pages web HTML. En regroupant les styles dans un fichier séparé, il offre une gestion centralisée des aspects visuels et facilite les modifications sur l'ensemble du site. Cela garantit une présentation cohérente et adaptable à différents appareils.
+
+### Liaison HTML et CSS
+
+Pour lier vos deux fichiers, il suffit d'ajouter cette ligne de code : 
+```html
+<link rel="stylesheet" href="./style.css" />
+```
+Dans votre HTML et plus précisement entre l'ouverture de votre balise `<head>` et sa fermeture `</head>`. C'est le seul endroit pour lier votre feuille de style.
+
+### La syntaxe
+
+```css
+h1 {
+  color: blue;
+  font-size: 12px;
+}
+```
+
+- Le `sélecteur` (*h1*) est l'élément sur lequel on applique les propriétés.
+- La `propriété` (*color*, *font-size*) est l'effet que l'on va donner comme la couleur, la position,...
+- La `valeur` (*blue*, *12px*) de la propriété CSS.
+- La `déclaration CSS` est l'ensemble de propriété et de valeur. On peut en avoir plusieurs par sélecteur, on les sépare par un **;**
+
+[:arrow_up: Revenir au top](#table-des-matières)
+
+### Les sélecteurs
+
+Vous pouvez sélectionner n'importe quel élément/balise HTML et lui appliquer un style, tous les éléments de la page seront impacté.
+
+```css
+p {
+  color: green; /* Tous vos paragraphes seront écrit en vert */
+}
+```
+
+Utiliser l'id pour sélectionner ce fait avec le symbole `#`
+
+```html
+<p id="monId">
+```
+```css
+#monId { 
+   color: red;
+ }
+```
+
+### Les propriétés
+
+Les propriétés CSS vont servir à changer nos éléments sélectionnées et à leurs donner du style! :sunglasses: Le soucis c'est que des propriétés il y en a beaucoup... vraiment beaucoup. On va commencer par voir les plus utiles pour construire notre page web. Il vous faudra fouiller la documentation CSS pour en trouver d'autre ou chercher des exemples sur le net. N'hésitez pas non plus a faire des recherches Google pour trouver ce que vous souhaitez comme effet.
+
+#### Quelques propriétés
+
+- `font-family:`: définit la police utilisée.
+- `color:`: définit la couleur du texte des éléments.
+- `text-align:`: aligne le texte à l'intérieur des éléments.
+- `padding:`: marges internes des éléments.
+- `margin:`: marge autour des éléments.
+- `width:`: définit la largeur des éléments.
+- `height:`: définit la hauteur des éléments.
+
+
+
+
+[Le cours complet Sirius WebDev](https://github.com/sirius-school/WebDev)
+
 
